@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Animación Scroll</title>
+  <style>
+    .fade-in {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: all 0.6s ease-out;
+    }
+
+    .fade-in.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    section {
+      height: 100vh;
+      padding: 50px;
+      font-size: 2em;
+    }
+  </style>
+</head>
+<body>
+
+<section class="fade-in" style="background-color: lightblue;">Sección 1</section>
+<section class="fade-in" style="background-color: lightpink;">Sección 2</section>
+<section class="fade-in" style="background-color: lightgreen;">Sección 3</section>
+
+<script>
+  const faders = document.querySelectorAll('.fade-in');
+
+  const appearOnScroll = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if(entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target); // si quieres que solo se ejecute una vez
+      }
+    });
+  }, {
+    threshold: 0.1
+  });
+
+  faders.forEach(fader => {
+    appearOnScroll.observe(fader);
+  });
+</script>
+
+</body>
+</html>

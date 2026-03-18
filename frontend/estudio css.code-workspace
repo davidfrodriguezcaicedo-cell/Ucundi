@@ -1,0 +1,22 @@
+{
+	"folders": [
+		{
+			"path": "../estudio css"
+		},
+		{
+			"path": "."
+		},
+		{
+			"path": "../java"
+		},
+		{
+			"path": "../aprendiendo angular"
+		},
+		{
+			"path": "../proyectos js"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "proyecto_integrador_beta"
+	}
+}
