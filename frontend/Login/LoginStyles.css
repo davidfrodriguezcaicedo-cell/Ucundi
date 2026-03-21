@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+   height: 100vh;
+   width: 100%;
+   display: flex;
+}
+#Container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    gap: 100px;
+}
+#titulo{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: rgb(0, 0, 0);
+    gap: 30px;
+}
+#titulo img{
+    width: 60px;
+    transform: scale(1.5);
+}
+#titulo h1{
+    line-height: 90px;
+    color: white;
+}
+#Login{
+    min-height: 400px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#login_card{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 30px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-top: 5px solid lightblue;
+    gap: 40px;
+    width: 18%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+#login_card form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+#login_card input[type ="text"]{
+   border: solid 1.5px #9e9e9e;
+ border-radius: 1rem;
+ background: none;
+ padding: 1rem;
+  width: 80%;
+ font-size: 1rem;
+ color: #f5f5f5;
+ transition: border 150ms cubic-bezier(0.4,0,0.2,1);
+}
+#login_card input[type ="password"]{
+   border: solid 1.5px #9e9e9e;
+ border-radius: 1rem;
+ background: none;
+ padding: 1rem;
+ width: 80%;
+ margin-top: 10px;
+ font-size: 1rem;
+ color: #f5f5f5;
+ transition: border 150ms cubic-bezier(0.4,0,0.2,1);
+}
+#login_card input[type = "submit"]{
+  background-color: #e0e0e0;
+  border-radius: 50px;
+  box-shadow: inset 4px 4px 10px #bcbcbc, inset -4px -4px 10px #ffffff;
+  color: #4d4d4d;
+  cursor: pointer;
+  font-size: 18px;
+  padding: 15px 25px;
+  transition: all 0.2s ease-in-out;
+  border: 2px solid rgb(206, 206, 206);
+  margin-top: 23px;
+}
+#login_card input[type = "submit"]:hover {
+  box-shadow: inset 2px 2px 5px #bcbcbc, inset -2px -2px 5px #ffffff, 2px 2px 5px #bcbcbc, -2px -2px 5px #ffffff;
+}
+#login_card input:focus{
+    outline: none;
+  box-shadow: inset 2px 2px 5px #bcbcbc, inset -2px -2px 5px #ffffff, 2px 2px 5px #bcbcbc, -2px -2px 5px #ffffff;
+}
+#CampoTitulo{
+   display: flex;
+   flex-direction: column;
+  width: 100%;
+  letter-spacing: 1px;
+  margin: 1px;
+  margin-bottom: 10px;
+  gap: 5px;
+}
+#CampoTitulo p{
+    color: gray;
+  letter-spacing: 2px;
+ 
+}
+#CampoTitulo h1{
+   font-size: 30px;
+  letter-spacing: 1px;
+  
+}
+#terms {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    
+}
+#terms a{
+    color: #4d4d4d;
+    text-decoration: none;
+}
