@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD - Gestión</title>
+    <link rel="stylesheet" href="CrudStyles.css">
+</head>
+<body>
+    <div id="Container">
+
+        <div id="titulo">
+            <img src="../images/escudo-color.png" alt="Logo">
+            <h1>Ucundinamarca Fusagasugá</h1>
+        </div>
+
+        <section id="crud-section">
+
+            <div id="crud-card-form">
+                <div id="CampoTitulo">
+                    <h1>Gestión de Registros</h1>
+                    <p>Agregar, editar, eliminar y consultar</p>
+                </div>
+
+                <form action="POST">
+                   
+                    <input type="text" name="correo" id="correo" placeholder="Correo electrónico">
+                    <input type="password" name="password" id="password" placeholder="Contraseña">
+
+                    <div id="botones">
+                        <input type="submit" value="Guardar">
+                        <button type="button" id="btnEditar">Editar</button>
+                        <button type="button" id="btnEliminar">Eliminar</button>
+                    </div>
+                </form>
+            </div>
+
+            <div id="crud-card-table">
+                <div id="CampoTitulo">
+                    <h1>Listado de Registros</h1>
+                    <p>Vista estática para el CRUD</p>
+                </div>
+
+                <div id="searchBar">
+                    <input type="text" placeholder="Buscar registro...">
+                    <button type="button">Buscar</button>
+                </div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            
+
+                            <th>Correo</th>
+                            <th>Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                           
+                           
+                            <td>juan@mail.com</td>
+                           
+                            <td>
+                                <button class="accion editar">Editar</button>
+                                <button class="accion eliminar">Eliminar</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            
+                            
+                            <td>maria@mail.com</td>
+                           
+                            <td>
+                                <button class="accion editar">Editar</button>
+                                <button class="accion eliminar">Eliminar</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            
+                            <td>carlos@mail.com</td>
+                            
+                            <td>
+                                <button class="accion editar">Editar</button>
+                                <button class="accion eliminar">Eliminar</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </section>
+    </div>
+</body>
+</html>

@@ -6,7 +6,7 @@ app.use(express.static(path.join(__dirname, "../../frontend")));
 app.get("/inicio", (req, res) =>{
     
     res.sendFile(path.join(__dirname, "../../frontend/inicio.html"));
-
+    
 })
 
 app.get("/", (req, res) => {
