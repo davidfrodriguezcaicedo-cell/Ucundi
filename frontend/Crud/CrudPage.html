@@ -22,10 +22,11 @@
                     <p>Agregar, editar, eliminar y consultar</p>
                 </div>
 
-                <form action="POST">
-                   
+                <form action="">
+                    <input type="text" name="nombre" id="nombre" placeholder="Nombre completo">
+                    <input type="text" name="documento" id="documento" placeholder="Documento">
                     <input type="text" name="correo" id="correo" placeholder="Correo electrónico">
-                    <input type="password" name="password" id="password" placeholder="Contraseña">
+                    <input type="text" name="telefono" id="telefono" placeholder="Teléfono">
 
                     <div id="botones">
                         <input type="submit" value="Guardar">
@@ -50,19 +51,20 @@
                     <thead>
                         <tr>
                             <th>ID</th>
-                            
-
+                            <th>Nombre</th>
+                            <th>Documento</th>
                             <th>Correo</th>
+                            <th>Teléfono</th>
                             <th>Acciones</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
                             <td>1</td>
-                           
-                           
+                            <td>Juan Pérez</td>
+                            <td>1002345678</td>
                             <td>juan@mail.com</td>
-                           
+                            <td>3001234567</td>
                             <td>
                                 <button class="accion editar">Editar</button>
                                 <button class="accion eliminar">Eliminar</button>
@@ -70,10 +72,10 @@
                         </tr>
                         <tr>
                             <td>2</td>
-                            
-                            
+                            <td>María Gómez</td>
+                            <td>1009876543</td>
                             <td>maria@mail.com</td>
-                           
+                            <td>3017654321</td>
                             <td>
                                 <button class="accion editar">Editar</button>
                                 <button class="accion eliminar">Eliminar</button>
@@ -81,9 +83,10 @@
                         </tr>
                         <tr>
                             <td>3</td>
-                            
+                            <td>Carlos Torres</td>
+                            <td>1023456789</td>
                             <td>carlos@mail.com</td>
-                            
+                            <td>3021112233</td>
                             <td>
                                 <button class="accion editar">Editar</button>
                                 <button class="accion eliminar">Eliminar</button>
