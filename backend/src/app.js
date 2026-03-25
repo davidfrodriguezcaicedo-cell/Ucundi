@@ -7,10 +7,7 @@ app.use(express.urlencoded({extended: true}));
 
 
 
-app.use(express.static(path.join(__dirname, "../../frontend")));
-app.use(express.static(path.join(__dirname, "../../frontend/Login")));
-app.use(express.static(path.join(__dirname, "../../frontend/Crud")));
-app.use(express.static(path.join(__dirname, "../../frontend/Register")));
+app.use(express.static(path.join(process.cwd(), "frontend")));
 const routes = require("./routes");
 app.use(routes);
 
