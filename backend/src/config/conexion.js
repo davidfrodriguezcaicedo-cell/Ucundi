@@ -3,7 +3,7 @@ const pool = mysql.createPool({
     host:"localhost",
     user:"root",
     password:"",
-    database:"zonafit_db"
+    database:"usuarios"
 });
 const promisePool = pool.promise();
 

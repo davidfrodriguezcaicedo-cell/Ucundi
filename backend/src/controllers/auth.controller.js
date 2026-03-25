@@ -3,9 +3,12 @@ const authService = require("../Service/auth.service");
 exports.login = async (req , res) => {
     try {
         const { email, password} = req.body;
-        const resultado = await authService(email,password);
+        const resultado = await authService.login(email,password);
         if(resultado.success){
-            return res.redirect("/inicio");
+            return res.json(resultado);
+        }
+        if(resultado.successAdmin ){
+           return res.json(resultado);
         }
         return res.status(401).json(resultado);
     } catch (error) {
@@ -21,7 +24,7 @@ exports.register = async (req, res) =>{
         const data = req.body;
         const resultado = await authService.register(data);
         if(resultado.success){
-           return res.redirect("/incio");
+           return res.json(resultado);
         }
         return res.status(400).json(resultado);
     } catch (error) {

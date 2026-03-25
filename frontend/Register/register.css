@@ -175,23 +175,4 @@ body{
 
     #terms{
         justify-content: center;
-    }
-}
-#Register{
-    color: gray;
-    display: flex;
-    flex-direction: column;
-        align-items: center;
-        gap: 5px;
-}
-#Register h1{
-    font-size: 20px;
-    
-}
-#Register a{
-   
-    text-decoration: none;
-    color: #4d4d4d;
-    font-size: 16px;
-    font-style: normal;
-}
+    }}

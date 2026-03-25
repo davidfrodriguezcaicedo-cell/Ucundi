@@ -9,6 +9,7 @@ router.use("/usuarios", usuariosRoutes);
 
 router.get("/", (req, res) =>{
   console.log("api funcionando");
+  res.send("API funcionando");
 });
 
 module.exports = router;
